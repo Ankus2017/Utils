@@ -6,3 +6,8 @@ readiness and liveness to control container restart
 
 ingress to exposet the services
 
+kubectl get secrets
+
+
+kubectl get secrets archive -o jsonpath="{ . data.release }" | base64 -d | base64 -d | gunzip | json_pp
+
