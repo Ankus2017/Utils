@@ -1,1 +1,8 @@
 https://github.com/phcollignon/helm3
+
+secrets for passwords
+
+readiness and liveness to control container restart
+
+ingress to exposet the services
+
