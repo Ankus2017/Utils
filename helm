@@ -11,3 +11,11 @@ kubectl get secrets
 
 kubectl get secrets archive -o jsonpath="{ . data.release }" | base64 -d | base64 -d | gunzip | json_pp
 
+helm get manifest chart-name
+
+helm get values
+
+
+OPENSHIFT HELM  3
+
+https://www.youtube.com/watch?v=pWTQDAQfb80 
