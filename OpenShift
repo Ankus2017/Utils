@@ -13,4 +13,6 @@ curl -X GET http://localhost:8001/api/v1/pods
 
 https://www.baeldung.com/java-curl
 
+https://copyprogramming.com/howto/java-curl-json-post-response-example#receiving-response-from-curl-in-java
+
 
