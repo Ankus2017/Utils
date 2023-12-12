@@ -2,6 +2,27 @@ OpenShift API
 
 https://access.redhat.com/documentation/fr-fr/openshift_container_platform/3.5/html-single/using_the_openshift_rest_api/index
 
+2.1.4.2. GET Request to List all Projects
+
+Request Header
+
+curl -k -v \
+-X GET \
+-H "Authorization: {$BEARER_TOKEN}" \
+-H "Accept: application/yaml" \
+-H "Content-Type: application/yaml" \
+{$OCP_CLUSTER}/oapi/v1/projects
+
+2.1.5. Listing a Specific Project
+2.1.5.1. Request Breakdown
+
+Listing the details for a project requires three requests:
+
+    A GET request to the project name in the projects resource.
+    A GET request to the resourcequotas subresource of the project namespace.
+    A GET request to the limitranges subresource of the project namespace. 
+
+These requests return the Project, ResourceQuotaList, and LimitRangeList configurations respectively for the project namespace. 
 
 4.1.3.2. GET Request to Return All Pod Configurations in Namespace
 
