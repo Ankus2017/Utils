@@ -2,6 +2,39 @@ OpenShift API
 
 https://access.redhat.com/documentation/fr-fr/openshift_container_platform/3.5/html-single/using_the_openshift_rest_api/index
 
+
+4.1.3.2. GET Request to Return All Pod Configurations in Namespace
+
+Request Header
+
+curl -k -v \
+-X GET  \
+-H "Authorization: {$BEARER_TOKEN}" \
+-H "Accept: application/yaml" \
+-H "Content-Type: application/yaml" \
+{$OCP_CLUSTER}/api/v1/namespaces/{$PROJECT}/pods
+
+4.1.4. Listing a Specific Pod Configuration in a Namespace
+4.1.4.1. Request Breakdown
+
+Listing a specific pod configuration requires one request:
+
+    A GET request to the pod name in the pods subresource of the namespace. 
+
+The GET request returns the Pod configuration for the specified pod.
+4.1.4.2. GET Request to Return Specific Pod Configuration
+
+Request Header
+
+curl -k -v \
+-X GET  \
+-H "Authorization: {$BEARER_TOKEN}" \
+-H "Accept: application/yaml" \
+-H "Content-Type: application/yaml" \
+{$OCP_CLUSTER}/api/v1/namespaces/{$PROJECT}/pods/{$POD}
+
+
+
 https://pabrahamsson.gitlab.io/2017/03/13/openshift-api.html
 
 https://stackoverflow.com/questions/77011935/openshift-api-how-to-get-a-list-of-all-pod-labels 
