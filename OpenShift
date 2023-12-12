@@ -2,6 +2,10 @@ OpenShift API
 
 https://access.redhat.com/documentation/fr-fr/openshift_container_platform/3.5/html-single/using_the_openshift_rest_api/index
 
+https://access.redhat.com/documentation/fr-fr/openshift_container_platform/3.5/html-single/using_the_openshift_rest_api/index#introduction-2
+
+https://access.redhat.com/documentation/en-us/openshift_container_platform/3.6/html/rest_api_reference/rest-api-index
+
 2.1.4.2. GET Request to List all Projects
 
 Request Header
